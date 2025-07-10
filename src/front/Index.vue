@@ -57,7 +57,7 @@
 </template>
 
 <script lang="ts" setup>
-import Header from './Header'
+import Header from './Header.vue'
 import EntranceStu from './EntranceStu.vue'
 import EntranceCom from './EntranceCom.vue'
 import { onMounted, reactive, ref } from 'vue'
@@ -78,11 +78,6 @@ const imgList = reactive([
     idView: require('@/assets/images/p1.jpg')
   }
 ])
-const swiperOption = reactive({
-  pagination: {
-    el: '.swiper-pagination'
-  }
-})
 const notices = reactive([
   {
     id: 1,
